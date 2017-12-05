@@ -125,6 +125,48 @@ This check flags ``for`` loops where the induction expression has a floating-poi
   <type>CODE_SMELL</type>
 </rule>
 <rule>
+  <key>clang-diagnostic-cast-calling-convention</key>
+  <name>clang-diagnostic-cast-calling-convention</name>
+  <description><![CDATA[<p>
+This check flags cast between incompatible calling conventions ``A`` and ``B``; calls through this pointer may abort at runtime
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wcast-calling-convention" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>clang-diagnostic-constant-conversion</key>
+  <name>clang-diagnostic-constant-conversion</name>
+  <description><![CDATA[<p>
+This check flags implicit conversion from ``C`` to ``D`` changes value from ``A`` to ``B``
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wconstant-conversion" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>clang-diagnostic-invalid-source-encoding</key>
+  <name>clang-diagnostic-invalid-source-encoding</name>
+  <description><![CDATA[<p>
+This check flags illegal character encoding in {character/string} literal
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#winvalid-source-encoding" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
   <key>cppcoreguidelines-interfaces-global-init</key>
   <name>cppcoreguidelines-interfaces-global-init</name>
   <description><![CDATA[<p>
@@ -145,9 +187,9 @@ and therefore can lead to order-of-initialization problems.
   <key>cppcoreguidelines-no-malloc</key>
   <name>cppcoreguidelines-no-malloc</name>
   <description><![CDATA[<p>
-This check handles C-Style memory management using malloc(), realloc(), calloc() and free(). 
-It warns about its use and tries to suggest the use of an appropriate RAII object. 
-Furthermore, it can be configured to check against a user-specified list of functions that are used for memory management (e.g. posix_memalign()). 
+This check handles C-Style memory management using malloc(), realloc(), calloc() and free().
+It warns about its use and tries to suggest the use of an appropriate RAII object.
+Furthermore, it can be configured to check against a user-specified list of functions that are used for memory management (e.g. posix_memalign()).
   </p>
     <h2>References</h2>
 
@@ -202,7 +244,7 @@ invalid pointer. Subtraction of two pointers is not flagged by this check.
     <h2>References</h2>
 
     <p><a href="http://clang.llvm.org/extra/clang-tidy/checks/cppcoreguidelines-pro-bounds-pointer-arithmetic.html" target="_blank">clang.llvm.org</a></p>
-    <p><a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-bounds-arithmetic" target="_blank">github</a></p>    
+    <p><a href="https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-bounds-arithmetic" target="_blank">github</a></p>
 ]]></description>
   <severity>MINOR</severity>
   <type>CODE_SMELL</type>
@@ -400,6 +442,20 @@ Right now it only triggers on ``using`` declarations and directives.
 ]]></description>
    <tag>cpplint-style</tag>
    <tag>bad-practice</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>google-readability-braces-around-statements</key>
+  <name>google-readability-braces-around-statements</name>
+  <description><![CDATA[<p>
+Checks that bodies of if statements and loops (for, do while, and while) are inside braces.
+  </p>
+    <h2>References</h2>
+
+    <p><a href="http://clang.llvm.org/extra/clang-tidy/checks/google-readability-braces-around-statements.html" target="_blank">clang.llvm.org</a></p>
+]]></description>
+   <tag>cpplint-style</tag>
   <severity>MINOR</severity>
   <type>CODE_SMELL</type>
 </rule>
@@ -1454,6 +1510,7 @@ it would suffice to obtain it by const reference.
   <type>CODE_SMELL</type>
 </rule>
 <rule>
+<rule>
   <key>performance-implicit-cast-in-loop</key>
   <name>performance-implicit-cast-in-loop</name>
   <description><![CDATA[<p>
@@ -1466,6 +1523,36 @@ expensive deep copies.
     <h2>References</h2>
 
     <p><a href="http://clang.llvm.org/extra/clang-tidy/checks/performance-implicit-cast-in-loop.html" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>performance-implicit-conversion-in-loop</key>
+  <name>performance-implicit-conversion-in-loop</name>
+  <description><![CDATA[<p>
+This warning appears in a range-based loop with a loop variable of const ref
+type where the type of the variable does not match the one returned by the
+iterator. This means that an implicit conversion happens, which can for example
+result in expensive deep copies.
+  </p>
+    <h2>References</h2>
+
+    <p><a href="http://clang.llvm.org/extra/clang-tidy/checks/performance-implicit-conversion-in-loop.html" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>performance-type-promotion-in-math-fn</key>
+  <name>performance-type-promotion-in-math-fn</name>
+  <description><![CDATA[<p>
+Finds calls to C math library functions (from math.h or, in C++, cmath) with
+implicit float to double promotions.
+  </p>
+    <h2>References</h2>
+
+    <p><a href="http://clang.llvm.org/extra/clang-tidy/checks/performance-type-promotion-in-math-fn.html" target="_blank">clang.llvm.org</a></p>
 ]]></description>
   <severity>MINOR</severity>
   <type>CODE_SMELL</type>
