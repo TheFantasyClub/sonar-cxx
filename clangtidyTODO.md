@@ -1,18 +1,18 @@
 ## TODO:
-* [V] ClangTidy-c:clang-diagnostic-cast-calling-convention
-* [V] ClangTidy-c:clang-diagnostic-constant-conversion
-* [X] ClangTidy-c:clang-diagnostic-format
-* [X] ClangTidy-c:clang-diagnostic-implicit-int
-* [X] ClangTidy-c:clang-diagnostic-incompatible-pointer-types
-* [V] ClangTidy-c:clang-diagnostic-invalid-source-encoding
-* [X] ClangTidy-c:clang-diagnostic-nonportable-include-path
-* [X] ClangTidy-c:clang-diagnostic-parentheses
-* [X] ClangTidy-c:clang-diagnostic-pointer-sign
-* [X] ClangTidy-c:clang-diagnostic-shift-op-parentheses
-* [X] ClangTidy-c:clang-diagnostic-tautological-pointer-compare
-* [X] ClangTidy-c:clang-diagnostic-unused-value
-* [V] ClangTidy-c:google-readability-braces-around-statements
-* [V] ClangTidy-c:performance-type-promotion-in-math-fn
+* [x] ClangTidy-c:clang-diagnostic-cast-calling-convention
+* [x] ClangTidy-c:clang-diagnostic-constant-conversion
+* [ ] ClangTidy-c:clang-diagnostic-format
+* [ ] ClangTidy-c:clang-diagnostic-implicit-int
+* [ ] ClangTidy-c:clang-diagnostic-incompatible-pointer-types
+* [x] ClangTidy-c:clang-diagnostic-invalid-source-encoding
+* [ ] ClangTidy-c:clang-diagnostic-nonportable-include-path
+* [ ] ClangTidy-c:clang-diagnostic-parentheses
+* [ ] ClangTidy-c:clang-diagnostic-pointer-sign
+* [ ] ClangTidy-c:clang-diagnostic-shift-op-parentheses
+* [ ] ClangTidy-c:clang-diagnostic-tautological-pointer-compare
+* [ ] ClangTidy-c:clang-diagnostic-unused-value
+* [x] ClangTidy-c:google-readability-braces-around-statements
+* [x] ClangTidy-c:performance-type-promotion-in-math-fn
 
 
 ## TODO:
