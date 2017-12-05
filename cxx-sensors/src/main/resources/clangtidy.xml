@@ -145,7 +145,6 @@ This check flags cast between incompatible calling conventions ``A`` and ``B``; 
 This check flags implicit conversion from ``C`` to ``D`` changes value from ``A`` to ``B``
   </p>
     <h2>References</h2>
-
     <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wconstant-conversion" target="_blank">clang.llvm.org</a></p>
 ]]></description>
   <tag>clang-diagnostic</tag>
