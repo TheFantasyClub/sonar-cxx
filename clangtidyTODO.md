@@ -10,7 +10,7 @@
 * [x] ClangTidy-c:clang-diagnostic-pointer-sign
 * [x] ClangTidy-c:clang-diagnostic-shift-op-parentheses
 * [x] ClangTidy-c:clang-diagnostic-tautological-pointer-compare
-* [ ] ClangTidy-c:clang-diagnostic-unused-value
+* [x] ClangTidy-c:clang-diagnostic-unused-value
 * [x] ClangTidy-c:google-readability-braces-around-statements
 * [x] ClangTidy-c:performance-type-promotion-in-math-fn
 

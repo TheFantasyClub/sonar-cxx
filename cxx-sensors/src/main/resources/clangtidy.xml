@@ -280,12 +280,31 @@ See the clang-tidy report to find more info
   <key>clang-diagnostic-tautological-pointer-compare</key>
   <name>clang-diagnostic-tautological-pointer-compare</name>
   <description><![CDATA[<p>
-This check flags operator ``A`` has lower precedence than ``B``; ``B`` will be evaluated first
+This check flags comparison of nonnull {function call / parameter} ``B`` {not / } equal to a null pointer is {``true``/``false``} on first encounter
 See the clang-tidy report to find more info
   </p>
     <h2>References</h2>
 
     <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wtautological-pointer-compare" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>clang-diagnostic-unused-value</key>
+  <name>clang-diagnostic-unused-value</name>
+  <description><![CDATA[<p>
+This check flags ignoring return value of function declared with A attribute
+This check flags container access result unused - container access should not be used for side effects
+This check flags expression result unused
+This check flags expression result unused; should this cast be to ‘void’?
+
+See the clang-tidy report to find more info
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wunused-value" target="_blank">clang.llvm.org</a></p>
 ]]></description>
   <tag>clang-diagnostic</tag>
   <severity>MINOR</severity>
