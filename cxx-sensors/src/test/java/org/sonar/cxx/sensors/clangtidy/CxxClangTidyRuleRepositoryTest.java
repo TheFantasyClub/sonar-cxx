@@ -35,7 +35,7 @@ public class CxxClangTidyRuleRepositoryTest {
   @Test
   public void createRulesTest() {
     CxxLanguage language = TestUtils.mockCxxLanguage();
-    
+
     CxxClangTidyRuleRepository def = new CxxClangTidyRuleRepository(
       mock(ServerFileSystem.class), new RulesDefinitionXmlLoader(), language);
 
@@ -43,6 +43,6 @@ public class CxxClangTidyRuleRepositoryTest {
     def.define(context);
 
     RulesDefinition.Repository repo = context.repository(CxxClangTidyRuleRepository.KEY);
-    assertEquals(155, repo.rules().size());
+    assertEquals(170, repo.rules().size());
   }
 }
