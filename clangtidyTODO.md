@@ -1,9 +1,9 @@
 ## TODO:
 * [x] ClangTidy-c:clang-diagnostic-cast-calling-convention
 * [x] ClangTidy-c:clang-diagnostic-constant-conversion
-* [ ] ClangTidy-c:clang-diagnostic-format
-* [ ] ClangTidy-c:clang-diagnostic-implicit-int
-* [ ] ClangTidy-c:clang-diagnostic-incompatible-pointer-types
+* [x] ClangTidy-c:clang-diagnostic-format
+* [x] ClangTidy-c:clang-diagnostic-implicit-int
+* [x] ClangTidy-c:clang-diagnostic-incompatible-pointer-types
 * [x] ClangTidy-c:clang-diagnostic-invalid-source-encoding
 * [ ] ClangTidy-c:clang-diagnostic-nonportable-include-path
 * [ ] ClangTidy-c:clang-diagnostic-parentheses

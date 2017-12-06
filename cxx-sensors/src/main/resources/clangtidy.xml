@@ -129,6 +129,7 @@ This check flags ``for`` loops where the induction expression has a floating-poi
   <name>clang-diagnostic-cast-calling-convention</name>
   <description><![CDATA[<p>
 This check flags cast between incompatible calling conventions ``A`` and ``B``; calls through this pointer may abort at runtime
+See the clang-tidy report to find more info
   </p>
     <h2>References</h2>
 
@@ -143,9 +144,56 @@ This check flags cast between incompatible calling conventions ``A`` and ``B``; 
   <name>clang-diagnostic-constant-conversion</name>
   <description><![CDATA[<p>
 This check flags implicit conversion from ``C`` to ``D`` changes value from ``A`` to ``B``
+See the clang-tidy report to find more info
   </p>
     <h2>References</h2>
+
     <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wconstant-conversion" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>clang-diagnostic-format</key>
+  <name>clang-diagnostic-format</name>
+  <description><![CDATA[<p>
+This check flags various warnings clang outputs
+See the clang-tidy report to find more info
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wformat" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>clang-diagnostic-implicit-int</key>
+  <name>clang-diagnostic-implicit-int</name>
+  <description><![CDATA[<p>
+This check flags type specifier missing, defaults to ``int``
+See the clang-tidy report to find more info
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wimplicit-int" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>clang-diagnostic-implicit-int</key>
+  <name>clang-diagnostic-implicit-int</name>
+  <description><![CDATA[<p>
+This check flags incompatible pointer types
+See the clang-tidy report to find more info
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wincompatible-pointer-types" target="_blank">clang.llvm.org</a></p>
 ]]></description>
   <tag>clang-diagnostic</tag>
   <severity>MINOR</severity>
@@ -156,6 +204,7 @@ This check flags implicit conversion from ``C`` to ``D`` changes value from ``A`
   <name>clang-diagnostic-invalid-source-encoding</name>
   <description><![CDATA[<p>
 This check flags illegal character encoding in {character/string} literal
+See the clang-tidy report to find more info
   </p>
     <h2>References</h2>
 
