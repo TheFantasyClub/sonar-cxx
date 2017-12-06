@@ -7,7 +7,7 @@
 * [x] ClangTidy-c:clang-diagnostic-invalid-source-encoding
 * [x] ClangTidy-c:clang-diagnostic-nonportable-include-path
 * [x] ClangTidy-c:clang-diagnostic-parentheses
-* [ ] ClangTidy-c:clang-diagnostic-pointer-sign
+* [x] ClangTidy-c:clang-diagnostic-pointer-sign
 * [ ] ClangTidy-c:clang-diagnostic-shift-op-parentheses
 * [ ] ClangTidy-c:clang-diagnostic-tautological-pointer-compare
 * [ ] ClangTidy-c:clang-diagnostic-unused-value

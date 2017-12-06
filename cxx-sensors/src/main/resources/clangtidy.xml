@@ -185,8 +185,8 @@ See the clang-tidy report to find more info
   <type>CODE_SMELL</type>
 </rule>
 <rule>
-  <key>clang-diagnostic-implicit-int</key>
-  <name>clang-diagnostic-implicit-int</name>
+  <key>clang-diagnostic-incompatible-pointer-types</key>
+  <name>clang-diagnostic-incompatible-pointer-types</name>
   <description><![CDATA[<p>
 This check flags incompatible pointer types
 See the clang-tidy report to find more info
@@ -194,6 +194,21 @@ See the clang-tidy report to find more info
     <h2>References</h2>
 
     <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wincompatible-pointer-types" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
+  <key>clang-diagnostic-invalid-source-encoding</key>
+  <name>clang-diagnostic-invalid-source-encoding</name>
+  <description><![CDATA[<p>
+This check flags illegal character encoding in {character/string} literal
+See the clang-tidy report to find more info
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#winvalid-source-encoding" target="_blank">clang.llvm.org</a></p>
 ]]></description>
   <tag>clang-diagnostic</tag>
   <severity>MINOR</severity>
@@ -218,7 +233,9 @@ See the clang-tidy report to find more info
   <key>clang-diagnostic-parentheses</key>
   <name>clang-diagnostic-parentheses</name>
   <description><![CDATA[<p>
-This check flags incompatible pointer types
+This check flags using the result of an assignment as a condition without parentheses.
+This check flags ``A`` has lower precedence than ``B``; ``B`` will be evaluated first.
+This check flags operator ``?:`` has lower precedence than ``A``; ``A`` will be evaluated first.
 See the clang-tidy report to find more info
   </p>
     <h2>References</h2>
@@ -230,15 +247,15 @@ See the clang-tidy report to find more info
   <type>CODE_SMELL</type>
 </rule>
 <rule>
-  <key>clang-diagnostic-invalid-source-encoding</key>
-  <name>clang-diagnostic-invalid-source-encoding</name>
+  <key>clang-diagnostic-pointer-sign</key>
+  <name>clang-diagnostic-pointer-sign</name>
   <description><![CDATA[<p>
 This check flags illegal character encoding in {character/string} literal
 See the clang-tidy report to find more info
   </p>
     <h2>References</h2>
 
-    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#winvalid-source-encoding" target="_blank">clang.llvm.org</a></p>
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wpointer-sign" target="_blank">clang.llvm.org</a></p>
 ]]></description>
   <tag>clang-diagnostic</tag>
   <severity>MINOR</severity>
