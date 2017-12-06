@@ -262,6 +262,21 @@ See the clang-tidy report to find more info
   <type>CODE_SMELL</type>
 </rule>
 <rule>
+  <key>clang-diagnostic-shift-op-parentheses</key>
+  <name>clang-diagnostic-shift-op-parentheses</name>
+  <description><![CDATA[<p>
+This check flags operator ``A`` has lower precedence than ``B``; ``B`` will be evaluated first
+See the clang-tidy report to find more info
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wshift-op-parentheses" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
   <key>cppcoreguidelines-interfaces-global-init</key>
   <name>cppcoreguidelines-interfaces-global-init</name>
   <description><![CDATA[<p>

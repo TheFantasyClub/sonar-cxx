@@ -8,7 +8,7 @@
 * [x] ClangTidy-c:clang-diagnostic-nonportable-include-path
 * [x] ClangTidy-c:clang-diagnostic-parentheses
 * [x] ClangTidy-c:clang-diagnostic-pointer-sign
-* [ ] ClangTidy-c:clang-diagnostic-shift-op-parentheses
+* [x] ClangTidy-c:clang-diagnostic-shift-op-parentheses
 * [ ] ClangTidy-c:clang-diagnostic-tautological-pointer-compare
 * [ ] ClangTidy-c:clang-diagnostic-unused-value
 * [x] ClangTidy-c:google-readability-braces-around-statements
