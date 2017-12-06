@@ -1654,7 +1654,6 @@ it would suffice to obtain it by const reference.
   <type>CODE_SMELL</type>
 </rule>
 <rule>
-<rule>
   <key>performance-implicit-cast-in-loop</key>
   <name>performance-implicit-cast-in-loop</name>
   <description><![CDATA[<p>
