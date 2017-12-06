@@ -5,7 +5,7 @@
 * [x] ClangTidy-c:clang-diagnostic-implicit-int
 * [x] ClangTidy-c:clang-diagnostic-incompatible-pointer-types
 * [x] ClangTidy-c:clang-diagnostic-invalid-source-encoding
-* [ ] ClangTidy-c:clang-diagnostic-nonportable-include-path
+* [x] ClangTidy-c:clang-diagnostic-nonportable-include-path
 * [ ] ClangTidy-c:clang-diagnostic-parentheses
 * [ ] ClangTidy-c:clang-diagnostic-pointer-sign
 * [ ] ClangTidy-c:clang-diagnostic-shift-op-parentheses

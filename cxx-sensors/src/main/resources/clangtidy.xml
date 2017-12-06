@@ -200,6 +200,21 @@ See the clang-tidy report to find more info
   <type>CODE_SMELL</type>
 </rule>
 <rule>
+  <key>clang-diagnostic-nonportable-include-path</key>
+  <name>clang-diagnostic-nonportable-include-path</name>
+  <description><![CDATA[<p>
+This check flags incompatible pointer types
+See the clang-tidy report to find more info
+  </p>
+    <h2>References</h2>
+
+    <p><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wnonportable-include-path" target="_blank">clang.llvm.org</a></p>
+]]></description>
+  <tag>clang-diagnostic</tag>
+  <severity>MINOR</severity>
+  <type>CODE_SMELL</type>
+</rule>
+<rule>
   <key>clang-diagnostic-invalid-source-encoding</key>
   <name>clang-diagnostic-invalid-source-encoding</name>
   <description><![CDATA[<p>
