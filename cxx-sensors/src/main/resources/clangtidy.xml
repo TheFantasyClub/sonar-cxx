@@ -218,7 +218,7 @@ See the clang-tidy report to find more info
   <key>clang-diagnostic-nonportable-include-path</key>
   <name>clang-diagnostic-nonportable-include-path</name>
   <description><![CDATA[<p>
-This check flags incompatible pointer types
+This check flags non-portable path to file ``A``; specified path differs in case from file name on disk
 See the clang-tidy report to find more info
   </p>
     <h2>References</h2>
@@ -250,7 +250,7 @@ See the clang-tidy report to find more info
   <key>clang-diagnostic-pointer-sign</key>
   <name>clang-diagnostic-pointer-sign</name>
   <description><![CDATA[<p>
-This check flags illegal character encoding in {character/string} literal
+This check flags various operations converts between pointers to integer types with different sign
 See the clang-tidy report to find more info
   </p>
     <h2>References</h2>
